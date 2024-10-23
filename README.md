@@ -1,47 +1,60 @@
-## ✔ REAL TIME HUMAN DETECTION & COUNTING
+# 🚀 Real-Time Human Detection & Counting
 
-- A tensorflow based `Faster RCNN inception v2` python model to detect and count humans in real time images, videos & camera.
-- Used pre-trained `frozen_inference_graph.pb` frozen graph to handle the detection.
-- Visualize the data using `Enumeration Plot` and `Avg. Accuracy Plot`.
+A TensorFlow-based `Faster RCNN Inception v2` model for detecting and counting humans in real-time using images, videos, and live camera feeds. This project leverages a pre-trained `frozen_inference_graph.pb` for efficient detection and visualization of human counts, providing insights through Enumeration and Accuracy plots.
 
 ---
 
-### 📌REQUIREMENTS :
+## 📋 Features
 
-- python 3
-- tkinter
-- messagebox
-- PIL
-- cv2
-- argparse
-- matplotlib.pyplot
-- numpy
-- time
-- os
-- tensorflow
-- fpdf
+- **Real-Time Detection**: Supports detecting humans from images, video files, and live camera feeds.
+- **Pre-Trained Model**: Uses a `frozen_inference_graph.pb` for faster and more accurate detection.
+- **Visual Analysis**: Generates detailed plots for:
+  - **Enumeration Plot**: Shows human count over time.
+  - **Avg. Accuracy Plot**: Displays average detection accuracy over time.
+- **Crowd Report Generation**: Generates a PDF report with information on max human count, accuracy, and a brief crowd status analysis.
 
 ---
 
-### 📌How this Script works :
+## 📌 Requirements
 
-- User just need to download the file and run the main.py on their local system.
-- On the starting window of the application, user will be able to see START and EXIT option, using which user can start the application or exit from the application.
-- When user starts the application using START button, a new window will open, which allows user with options like, DETECT FROM IMAGE, DETECT FROM VIDEO or DETECT FROM CAMERA.
-- When user selects any of the first two option, he/she needs to select the respective files using SELECT button.
-- User can preview the selected file using PREVIEW button, and detect and count the humans using DETECT button.
-- And when user selects, the last option of detecting through camera, user need to open the Camera, using OPEN CAMERA button, As soon as camera opens, detection process will start.
-- After detection process gets completed or user manually completes it, two graph get plotted,
-  - 1.) Enumeration Plot(Human Count Vs. time) and
-  - 2.) Avg. Accuracy Plot(Avg. Accuracy Vs. time).
-- Along with this two plots, an option to generate crowd report also appears, On clicking on it, a crowd report in form of PDF is generated ans saved autmatically at the project file location.
-- In the crowd report genrated, there will be information like, What is Max Human Count, Max Accuracy, Max Avg. Accuracy, and also a two line status about crowd.
+- Python 3
+- `tkinter`
+- `messagebox`
+- `PIL`
+- `cv2` (OpenCV)
+- `argparse`
+- `matplotlib`
+- `numpy`
+- `time`
+- `os`
+- `tensorflow`
+- `fpdf`
 
-### 📌Purrpose :
+---
 
-- This scripts helps user to easily get the count of human through real time image, video or camera, and thereafter also analysis of crowd through crowd report.
+## 🚀 How It Works
 
-### 📌Compilation Steps :
+1. **Setup**: Download the project files and run `main.py` on your local machine.
+2. **Start the Application**: On the startup window, choose between `START` to begin or `EXIT` to close the application.
+3. **Choose Detection Method**:
+   - **Detect from Image**: Select an image file, preview it, and click `DETECT` to start detection.
+   - **Detect from Video**: Select a video file, preview it, and click `DETECT` to start detection.
+   - **Detect from Camera**: Click `OPEN CAMERA` to begin real-time detection through your camera.
+4. **View Results**:
+   - Once detection is complete, two plots are displayed:
+     - **Enumeration Plot**: Human Count vs. Time.
+     - **Avg. Accuracy Plot**: Avg. Accuracy vs. Time.
+   - Option to generate a **Crowd Report** as a PDF, which is saved automatically in the project directory.
+
+---
+
+## 📌 Purpose
+
+This script helps users to easily detect and count humans in real-time through images, videos, or live camera feeds. It also provides a detailed crowd analysis through a report, making it useful for monitoring environments, events, or areas with human activity.
+
+---
+
+### 📌Compilation Steps
 
 - Install all the required libraries.
 - After that download the code file, and run main.py on local system.
@@ -49,7 +62,7 @@
 
 ---
 
-### 📌SCREENSHOTS :
+### 📌SCREENSHOTS
 
 <p align="center">
   <img width = 1000 src="Screenshots/1.jpg" /><br>
@@ -93,3 +106,7 @@
 </p>
 
 ---
+
+### 📌 Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or bug fixes, feel free to open an issue or submit a pull request.
