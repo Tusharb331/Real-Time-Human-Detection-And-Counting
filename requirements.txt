@@ -1,11 +1,6 @@
-tkinter
-messagebox
-PIL
-cv2
-argparse
-matplotlib.pyplot
+matplotlib
 numpy
-time
-os
+opencv-python
+Pillow
 tensorflow
 fpdf
